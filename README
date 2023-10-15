@@ -1,0 +1,5 @@
+# MLOps Assignment # 1
+The purpose of this assignmnet is to design a collaborative CI/CD pipeline for a project
+with machine learning models, using tools like GitHub,
+Jenkins, Docker, and GitHub Actions. This pipeline enforces code quality,
+testing, and efficient deployment through automated workflows
