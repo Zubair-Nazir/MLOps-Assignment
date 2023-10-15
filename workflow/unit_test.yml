@@ -1,0 +1,19 @@
+name: Unit_Testing
+
+on:
+  pull_request:
+    branches:
+      - DEV
+
+jobs:
+  unit_tests:
+    runs-on: windows
+    steps:
+      - name: Checkout 
+        uses: actions/checkout@v3
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Unit Tests
+        run: pytest test/test.py
